@@ -40,3 +40,11 @@ valor IN (SELECT valor FROM nomeDaTabela) --Chamado de subselect ou subquery
 SELECT * FROM tabela WHERE nome LIKE 'Jos%' --O nome inicia com *Jos*
 SELECT * FROM tabela WHERE nome LIKE '%se' --O nome inicia com *se*
 SELECT * FROM tabela WHERE nome LIKE '%os%' --O meio do nome contenha *os*
+
+
+/*-------------------------GROUP BY-------------------------*/
+--O GROUP BY basicamente divide o resultado da sua pesquisa em grupos
+--Para cada grupo você pode aplicar uma função de agregação, por exemplo:
+--calcular a soma de itens
+--contar o número de itens naquele grupo
+SELECT coluna1,funcaoAgregacao(c01una21) FROM nomeTabe1a GROUP BY colunai;
