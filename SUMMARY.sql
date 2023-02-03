@@ -54,7 +54,14 @@ SELECT coluna1,funcaoAgregacao(c01una21) FROM nomeTabe1a GROUP BY colunai;
 SELECT coluna1,funcaoAgregacao(coluna2) FROM nomeTabe1a GROUP BY coluna1 HAVING condicao;
 --A diferença entre HAVING e WHERE é que o GROUP BY é aplicado depois que os dados já foram agrupados, enquanto o WHERE é aplicado antes dos dados serem agrupados.
 
-
-
-
+/*-------------------------JOIN-------------------------*/
+/*
+		--Tabela 1--		--Tabela 2--	
+		--Cliente--			--Endereco--
+		ClienteID			EnderecoID
+		Nome				Rua
+		EnderecoID			Cidade
+*/
+--INNER JOIN: Juntar informação de uma tabela a outra
+SELECT C.ClienteID,C.Nome,E.Rua,E.Cidade FROM Cliente C INNER JOIN Endereco E ON E.EnderecoID = C.EnderecoID
 

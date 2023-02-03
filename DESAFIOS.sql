@@ -37,4 +37,10 @@ SELECT StateProvinceID,COUNT(StateProvinceID) "Quantidade" FROM Person.Address G
 --Quais produtos não estão trazendo em média no minimo 1mi em total de vendas
 SELECT ProductID,AVG(linetotal) FROM Sales.SalesOrderDetail GROUP BY ProductID HAVING AVG(linetotal) < 1000000
 
+--Selecionar das tabelas Person.PhoneNumberType e Person.PersonPhone o BusinessEntityID, Name, PhoneNumberTypeId e PhoneNumber
+SELECT * FROM Person.PhoneNumberType
+SELECT * FROM Person.PersonPhone
+SELECT pp.BusinessEntityID, pt.name, pt.PhoneNumberTypeId, pp.PhoneNumber FROM person.PersonPhone PP INNER JOIN Person.PhoneNumberType PT ON PT.PhoneNumberTypeID = pp.PhoneNumberTypeID
 
+--Selecionar das tabelas Person.StateProvince e Person.Adress as informações AdressId, City, StateProvinceId, Nome do estado
+SELECT PA.AddressID, PA.City, PS.StateProvinceID, PS.Name FROM Person.Address PA INNER JOIN Person.StateProvince PS ON PS.StateProvinceID = PA.StateProvinceID
