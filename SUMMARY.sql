@@ -48,3 +48,13 @@ SELECT * FROM tabela WHERE nome LIKE '%os%' --O meio do nome contenha *os*
 --calcular a soma de itens
 --contar o número de itens naquele grupo
 SELECT coluna1,funcaoAgregacao(c01una21) FROM nomeTabe1a GROUP BY colunai;
+
+/*-------------------------HAVING-------------------------*/
+--Utilizado junto com o GROUP BY para filtrar resultados de um agrupamento (Um Where para dados agrupados).
+SELECT coluna1,funcaoAgregacao(coluna2) FROM nomeTabe1a GROUP BY coluna1 HAVING condicao;
+--A diferença entre HAVING e WHERE é que o GROUP BY é aplicado depois que os dados já foram agrupados, enquanto o WHERE é aplicado antes dos dados serem agrupados.
+
+
+
+
+
