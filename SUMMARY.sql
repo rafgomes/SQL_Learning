@@ -72,6 +72,12 @@ SELECT * FROM TabelaA FULL OUTER JOIN TabelaB ON TabelaA.EnderecoID = TabelaB.En
 --LEFT OUTER JOIN: Retorna os registros da TabelaA e os registros correspondentes na TabelaB, os demais retornam como NULL
 SELECT * FROM TabelaA LEFT JOIN TabelaB ON TabelaA.EnderecoID = TabelaB.EnderecoID
 
+/*-------------------------UNION-------------------------*/
+--Combina dois ou mais resultados de um select em um apenas
+SELECT Coluna1, Coluna2 FROM Tabela1 UNION SELECT Coluna1, Coluna2 FROM Tabela2 --Remove os dados duplicados
+SELECT Coluna1, Coluna2 FROM Tabela1 UNION ALL SELECT Coluna1, Coluna2 FROM Tabela2 --Retorna todos os dados
+
+
 
 
 
