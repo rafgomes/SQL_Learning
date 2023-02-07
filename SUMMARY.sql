@@ -77,6 +77,9 @@ SELECT * FROM TabelaA LEFT JOIN TabelaB ON TabelaA.EnderecoID = TabelaB.Endereco
 SELECT Coluna1, Coluna2 FROM Tabela1 UNION SELECT Coluna1, Coluna2 FROM Tabela2 --Remove os dados duplicados
 SELECT Coluna1, Coluna2 FROM Tabela1 UNION ALL SELECT Coluna1, Coluna2 FROM Tabela2 --Retorna todos os dados
 
+/*-------------------------SELF JOIN-------------------------*/
+--Filtros na mesma tabela
+SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 
 
 
