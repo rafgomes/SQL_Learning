@@ -9,4 +9,12 @@ SELECT pr.ListPrice, pr.Name, pc.Name FROM Production.Product pr INNER JOIN Prod
 --Seleciona tudo das 10 primeiras linhas das duas tabelas pelo ID
 SELECT TOP 10 * FROM Person.BusinessEntityAddress BA INNER JOIN Person.Address PA ON PA.AddressID = BA.AddressID
 
-/*-------------------------INNER JOIN-------------------------*/
+/*-------------------------LEFT OUTER JOIN-------------------------*/
+--Ou LEFT JOIN
+
+--Descobrir quais pessoas tem um cartão de credito registrado
+SELECT * FROM Person.Person PP INNER JOIN Sales.PersonCreditCard PC ON PP.BusinessEntityID = PC.BusinessEntityID
+--INNER JOIN: 19118 Linhas
+SELECT * FROM Person.Person PP LEFT JOIN Sales.PersonCreditCard PC ON PP.BusinessEntityID = PC.BusinessEntityID
+--INNER JOIN: 19972 Linhas
+

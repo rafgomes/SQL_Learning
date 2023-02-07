@@ -56,12 +56,24 @@ SELECT coluna1,funcaoAgregacao(coluna2) FROM nomeTabe1a GROUP BY coluna1 HAVING 
 
 /*-------------------------JOIN-------------------------*/
 /*
-		--Tabela 1--		--Tabela 2--	
+		--TabelaA--			--TabelaB--
+		--Tabela1--			--Tabela2--	
 		--Cliente--			--Endereco--
 		ClienteID			EnderecoID
 		Nome				Rua
 		EnderecoID			Cidade
 */
---INNER JOIN: Juntar informação de uma tabela a outra
+--INNER JOIN: Juntar informação de uma tabela a outra, sempre as infromações que contenham nas duas tabelas, no caso do exemplo acima EnderecoID
 SELECT C.ClienteID,C.Nome,E.Rua,E.Cidade FROM Cliente C INNER JOIN Endereco E ON E.EnderecoID = C.EnderecoID
+
+--FULL OUTER JOIN: Retorna todos os registros correspondentes de ambas as tabelas quando são iguais, e quando não houver terona Null
+SELECT * FROM TabelaA FULL OUTER JOIN TabelaB ON TabelaA.EnderecoID = TabelaB.EnderecoID
+
+--LEFT OUTER JOIN: Retorna os registros da TabelaA e os registros correspondentes na TabelaB, os demais retornam como NULL
+SELECT * FROM TabelaA LEFT JOIN TabelaB ON TabelaA.EnderecoID = TabelaB.EnderecoID
+
+
+
+
+
 
