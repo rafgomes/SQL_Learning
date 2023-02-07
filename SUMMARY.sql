@@ -86,3 +86,5 @@ SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 
 
 
+
+

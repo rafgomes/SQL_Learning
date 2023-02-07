@@ -44,3 +44,6 @@ SELECT pp.BusinessEntityID, pt.name, pt.PhoneNumberTypeId, pp.PhoneNumber FROM p
 
 --Selecionar das tabelas Person.StateProvince e Person.Adress as informações AdressId, City, StateProvinceId, Nome do estado
 SELECT PA.AddressID, PA.City, PS.StateProvinceID, PS.Name FROM Person.Address PA INNER JOIN Person.StateProvince PS ON PS.StateProvinceID = PA.StateProvinceID
+
+--Selecionar todos os endereços que estão na tabela de 'Alberta', pode trazer todas as informações (Usar as tabelas Person.Adress e Person.StateProvince)
+SELECT * FROM Person.Address WHERE StateProvinceID IN (SELECT StateProvinceID FROM Person.StateProvince WHERE Name = 'Alberta')
