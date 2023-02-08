@@ -81,6 +81,12 @@ SELECT Coluna1, Coluna2 FROM Tabela1 UNION ALL SELECT Coluna1, Coluna2 FROM Tabe
 --Filtros na mesma tabela
 SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 
+/*-------------------------DATEPART-------------------------*/
+--Extrair uma data especifica (Mes, Dia, Ano, Hora...)
+-- https://learn.microsoft.com/pt-br/sql/t-sql/functions/datepart-transact-sql?view=sql-server-ver16
+
+
+
 
 
 
