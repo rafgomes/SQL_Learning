@@ -89,6 +89,10 @@ SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 --Filtros com operações de string (maiusculo, minusculo, subistituir caracteres...)
 --https://learn.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver16
 
+/*-------------------------FUNÇÕES MATEMATICAS-------------------------*/
+--Filtros com operações matematicas
+https://learn.microsoft.com/pt-br/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-ver16
+
 
 
 
