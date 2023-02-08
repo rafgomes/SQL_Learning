@@ -155,6 +155,13 @@ CREATE TABLE nomeTabe1a (
 --CHECK - FORÇA uma condição especifica em uma coluna
 --DEFAULT - força um valor padrão quando nenhum valor é passado
 
+/*-------------------------INSERT INTO-------------------------*/
+INSERT INTO noteTabela(coluna1, coluna2...) --Insere valores nas colunas 1 e 2
+	VALUES(valor1, valor2)
+	VALUES(valor1, valor2) --Os dados a serem inseridos nas linhas, separados por virugla repectiviamente as colunas
+	VALUES(valor1, valor2)
+
+INSERT INTO TabelaA(coluna1) SELECT coluna2 FROM TabelaB --Insere informações de outra tabela em uma tabela já existente
 
 
 
