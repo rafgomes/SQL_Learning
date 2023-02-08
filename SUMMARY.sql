@@ -85,7 +85,9 @@ SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 --Extrair uma data especifica (Mes, Dia, Ano, Hora...)
 -- https://learn.microsoft.com/pt-br/sql/t-sql/functions/datepart-transact-sql?view=sql-server-ver16
 
-
+/*-------------------------STRING OPERATIONS-------------------------*/
+--Filtros com operações de string (maiusculo, minusculo, subistituir caracteres...)
+--https://learn.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver16
 
 
 
