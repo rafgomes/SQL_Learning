@@ -121,6 +121,27 @@ SELECT coluna FROM TabelaA, TabelaB WHERE CONDICAO
 --DATETIMEOFFSET-- Armazena informações de data e horas incluido fuso horario
 
 
+/*-------------------------CHAVES PRIMARIAS E ESTRANGEIRAS-------------------------*/
+--Uma chave primária é basicamente uma coluna ou grupo de usada para identificar unicamente uma linha em uma tabela
+--Criar essas chaves primárias através que restrições (ou constraints em inglês), que são regras que vc define quando está criando uma coluna
+--Assim quando você faz isso voce está criando um índice único para aquela coluna ou grupo de coluna
+/*
+> o que é uma Chave estrangeira
+* Uma chave estrangeira é uma coluna ou grupo de colunas em uma tabela que identifica unicamente uma linha em outra tabela.
+* ou seja, uma chave estrangeira é definida em uma tabela onde ela é apenas uma referência e não contem todos os dados ali
+* então uma chave estrangeira é simplesmente uma coluna ou grupo de colunas que é uma chave primária em outra tabela
+* A tabela que contem a chave estrangeira é chamada de tabela referênciadora ou tabela filho. E a tabela na qual a chave estrangeira é referenciada é chamada de tabela referenciada ou tabela pai.
+* uma tabela pode ter mais de uma chave estrangeira dependendo do seu relacionamento com as outras tabelas
+
+REGRAS:
+* No SQL Server você define uma chave estrangeira atravez de um "Foreign Key Constraint" ou Restrição de chave estrangeira
+* Uma Restrição de Chave Estrangeira indica que os valores em uma coluna ou grupo de colunas na tabela filho correspondem aos valores na tabela pai
+* Nos podemos entender que uma chave estrangeira mantem a "integridade referencial"
+
+
+*/
+
+
 
 
 
