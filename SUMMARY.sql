@@ -137,9 +137,24 @@ REGRAS:
 * No SQL Server você define uma chave estrangeira atravez de um "Foreign Key Constraint" ou Restrição de chave estrangeira
 * Uma Restrição de Chave Estrangeira indica que os valores em uma coluna ou grupo de colunas na tabela filho correspondem aos valores na tabela pai
 * Nos podemos entender que uma chave estrangeira mantem a "integridade referencial"
-
-
 */
+
+/*-------------------------CREATE TABLE-------------------------*/
+--Criar tabelas:
+CREATE TABLE nomeTabe1a (
+	colunal tipo restricaoDaC01una,
+	coluna2 tipo restricaoDaC01una,
+	coluna3 tipo restricaoDaColuna,
+	);
+
+--Principais tipos de restrições que podem ser aplicadas
+--NOT NULL - Não permite nulos
+--UNIQUE- Força que todos os valores em uma coluna sejam diferentes
+--PRIMARY KEY - uma junção de e UNIQUE
+--FOREIGN KEY - identifica únicamente uma linha em outra tabela
+--CHECK - FORÇA uma condição especifica em uma coluna
+--DEFAULT - força um valor padrão quando nenhum valor é passado
+
 
 
 
