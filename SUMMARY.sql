@@ -163,8 +163,16 @@ INSERT INTO noteTabela(coluna1, coluna2...) --Insere valores nas colunas 1 e 2
 
 INSERT INTO TabelaA(coluna1) SELECT coluna2 FROM TabelaB --Insere informações de outra tabela em uma tabela já existente
 
+/*-------------------------UPDATE-------------------------*/
+--Alterar valores em tabelas
+UPDATE nomeTabe1a
+	SET colunal = valorl
+		coluna2 = valor2
+WHERE condicao
 
-
+/*-------------------------DELETE-------------------------*/
+--Apaga valores da tabela
+DELETE nomeTabela FROM condicao
 
 
 
